@@ -6,7 +6,7 @@ import (
 
 const INVALID = -1
 
-func mod(int1, int2 int) int {
+func mod2(int1, int2 int) int {
 
 	if int2 > 0 {
 		return int1 % int2
@@ -20,9 +20,9 @@ func main() {
 
 	fmt.Scan(&year)
 
-	leapYear1 := mod(year, 4)
-	leapYear2 := mod(year, 100)
-	leapYear3 := mod(year, 400)
+	leapYear1 := mod2(year, 4)
+	leapYear2 := mod2(year, 100)
+	leapYear3 := mod2(year, 400)
 
 	if leapYear1 == 0 && leapYear2 > 0 || leapYear3 == 0 {
 		fmt.Println(1)
