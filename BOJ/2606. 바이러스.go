@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-type Queue []interface{}
+type Q []interface{}
 
 func main() {
 	r := bufio.NewReader(os.Stdin)
@@ -30,7 +30,7 @@ func main() {
 		check[i] = false
 	}
 
-	var q Queue
+	var q Q
 
 	for i := 0; i < n; i++ {
 		if computer[i][0] == 1 {
